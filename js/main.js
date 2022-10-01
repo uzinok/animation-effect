@@ -13,4 +13,4 @@ setTimeout(function() {
 		}, element.dataset.delay);
 	});
 
-}, 3000);
+}, 1000);

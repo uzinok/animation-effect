@@ -39,6 +39,7 @@
 	border: 2px solid #ff6347;
 	border-bottom: 0;
 	border-left: 0;
+	opacity: 0;
 }
 
 .animation-2:not(.no-js)::after {
@@ -50,24 +51,27 @@
 	border: 2px solid #ff6347;
 	border-top: 0;
 	border-right: 0;
+	opacity: 0;
 }
 
-.animation::after {
+.animation-2.animation::after {
+	opacity: 1;
 	/* название анимации */
 	animation-name: animation;
 	/* скорость */
-	animation-duration: 1s;
+	animation-duration: 0.8s;
 	/* изменеие скорости */
 	animation-timing-function: linear;
 	/* время задержки */
-	animation-delay: 1s;
+	animation-delay: 0.8s;
 	/* состояние по окончанию */
 	animation-fill-mode: forwards;
 }
 
-.animation::before {
+.animation-2.animation::before {
+	opacity: 1;
 	animation-name: animation;
-	animation-duration: 1s;
+	animation-duration: 0.8s;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
