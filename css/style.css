@@ -16,6 +16,7 @@
 	text-align: center;
 	border: 1px solid #3ace5f;
 	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
 }
 
 .no-js.animation-2 {
@@ -55,10 +56,10 @@
 	animation-duration: 1s;
 	/* изменеие скорости */
 	animation-timing-function: linear;
-	/* состояние по окончанию */
-	animation-fill-mode: forwards;
 	/* время задержки */
 	animation-delay: 1s;
+	/* состояние по окончанию */
+	animation-fill-mode: forwards;
 }
 
 .animation::before {
