@@ -16,7 +16,6 @@
 	text-align: center;
 	border: 1px solid #3ace5f;
 	opacity: 0;
-	transition: opacity 0.25s ease-in-out;
 }
 
 .no-js.animation-2 {
@@ -25,6 +24,10 @@
 
 .no-js [class^='block-'] {
 	opacity: 1;
+}
+
+.animation [class^='block-'] {
+	transition: opacity 0.25s ease-in-out;
 }
 
 .animation-2:not(.no-js)::before {
