@@ -1,11 +1,16 @@
-const animation = document.querySelector('.animation-2');
+const noJs = document.querySelector('.no-js');
+
+const animationTwo = document.querySelector('.animation-2');
+const animationThree = document.querySelector('.animation-3');
+
 const animationItems = document.querySelectorAll('[class^="block-"]');
 
-animation.classList.remove('no-js');
+noJs.classList.remove('no-js');
 
 setTimeout(function() {
 
-	animation.classList.add('animation');
+	animationTwo.classList.add('animation');
+	animationThree.classList.add('animation');
 
 	animationItems.forEach(element => {
 		setTimeout(function() {
@@ -13,4 +18,4 @@ setTimeout(function() {
 		}, element.dataset.delay);
 	});
 
-}, 1000);
+}, 2000);
